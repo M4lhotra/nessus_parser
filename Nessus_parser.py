@@ -202,6 +202,9 @@ for x in findings_dct.keys():
             if y[i] == "High":
                 details.write(row,column,row-1,finding_format)
                 details.write(row,column+(i+2),y[i],high_format)
+            elif y[i] == "Critical":
+                details.write(row,column,row-1,finding_format)
+                details.write(row,column+(i+2),y[i],critical_format)                
             elif y[i] == "Medium":
                 details.write(row,column,row-1,finding_format)
                 details.write(row,column+(i+2),y[i],medium_format)
